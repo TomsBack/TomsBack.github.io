@@ -1,0 +1,246 @@
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url("fonts/Montserrat-Medium.otf");
+}
+
+
+html {
+    background-color: #1c1e24;
+    color: white;
+
+    font-family: Montserrat-Medium;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+}
+
+h1, h2, h3, h4, h5 {
+    text-shadow: 2px 2px 5px #626977;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    color: #626977;
+    margin-top: 3rem;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+article h1 {
+    font-size: 3rem;
+
+    margin-top: 8rem;
+}
+
+article section {
+    display: flex;
+    justify-content: center;
+
+    height: 300px;
+    margin-top: 5rem;
+}
+
+article section p {
+    line-height: 1.65rem;
+    max-width: 50ch;
+}
+
+article section img {
+    margin-left: 2rem;
+    height: 300px;
+
+    box-shadow: 0 0 15px #17191d;
+    border-radius: 5px;
+    filter: saturate(0);
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.button {
+    color: white;
+    display: grid;
+    place-items: center;
+
+    margin: auto;
+    margin-top: 2rem;
+
+    width: 64px;
+    height: 32px;
+
+    padding: 0.4rem;
+
+    border: 3px solid;
+    border-radius: 15px;
+
+    transition: all 0.2s;
+}
+
+.button:hover {
+    transform: scale(105%);
+
+    background-color: white;
+    color: black;
+
+    text-shadow: 1px 1px 5px black;
+    border: 3px solid white;
+}
+
+.button a {
+    color: white;
+
+    transition: all 0.2s;
+}
+
+.button a:hover {
+    color: black;
+}
+
+#head {
+    height: 80px;
+
+    display: flex;
+
+    background-color: #202329;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 2;
+
+    box-shadow: 0 10px 3px #181a1d;
+}
+
+#head h1 {
+    height: 40px;
+
+    margin-left: 0.7em;
+
+    text-shadow: 0 2px 2px rgb(139, 139, 139);
+    border-bottom: 2px solid;
+}
+
+#head nav {
+    width: 500px;
+    height: 100%;
+
+    margin-left: auto;
+}
+
+#head ul {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    gap: 3rem;
+
+    width: 500px;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+#head li {
+    display: grid;
+    place-items: center;
+
+    margin-top: 32px;
+
+    height: 24px;
+    border-bottom: dashed;
+
+    transition: all 0.2s;
+    transition-property: transform, text-shadow;
+}
+
+#head a {
+    display: block;
+    
+    height: 32px;
+}
+
+#head li:hover, .active {
+    text-shadow: 0 0 10px white;
+    transform: scale(110%);
+}
+
+#dovednosti {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    
+    list-style: none;
+  
+    padding: 0;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+  
+    animation: fade-in 1s linear;
+  }
+
+#dovednosti li {
+    background-color: #272a31;
+
+    width: 190px;
+    height: 312px;
+    box-shadow: 0px 0px 15px #131418;
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.5rem;
+    place-items: center;
+    
+    border-radius: 10px;
+  
+    transition: transform 0.2s;
+  }
+  
+  #dovednosti li:hover {
+    transform: scale(110%);
+  }
+  
+  #dovednosti li > h1 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+  
+    border-bottom: 3px dashed rgb(194, 194, 194);
+  }
+  
+  #dovednosti li > p {
+    text-align: center;
+    line-height: 1.45rem;
+    font-size: 0.89rem;
+  
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 3px;
+    margin: 0;
+    margin-top: 0.25rem;
+  }
+  
+  #dovednosti li > img {
+    width: 64px;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
