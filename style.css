@@ -252,4 +252,82 @@ article section img {
         width: 180px;
         height: 320px;
     }
+
+    article section {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    
+        text-align: center;
+        margin: auto;
+        margin-left: 0.;
+        margin-top: 10rem;
+    }
+
+    article section img {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 426px) {
+    #head ul {
+        gap: 0.75rem;
+    }
+
+    #head nav {
+        height: 100%;
+    
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+    
+    #dovednosti li {
+        background-color: #25282e;
+    
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        place-items: center;
+        gap: 0.2rem;
+    
+        width: 150px;
+        height: 200px;
+        
+        box-shadow: 0px 0px 15px #16171b;
+        border-radius: 10px;
+      
+        transition: transform 0.2s;
+    }
+      
+    #dovednosti li > h1 {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        text-transform: none;
+      
+        border-bottom: 3px dashed rgb(255, 255, 255);
+    }
+      
+    #dovednosti li > p {
+        text-align: center;
+        line-height: 1.5em;
+        font-size: 0.6rem;
+    
+        margin: 0;
+        margin-top: 0.25rem;
+    
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+      
+    #dovednosti li > img {
+        width: 32px;
+        height: 32px;
+    
+        aspect-ratio: 1;
+    
+        margin: 0;
+        margin-top: 1.5rem;
+    }
 }
