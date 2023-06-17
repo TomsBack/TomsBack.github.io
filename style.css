@@ -1,13 +1,13 @@
 @font-face {
     font-family: Montserrat-Medium;
     src: url("fonts/Montserrat-Medium.otf");
-    font-display: auto;
+    font-display: swap;
 }
 
 
 html {
     background-color: #191b20;
-    color: rgb(204, 204, 204);
+    color: rgb(228, 228, 228);
 
     font-family: Montserrat-Medium;
 }
@@ -29,7 +29,7 @@ a {
 }
 
 footer {
-    color: #626977;
+    color: #949dad;
     margin-top: 3rem;
 
     text-align: center;
@@ -59,7 +59,7 @@ article section p {
 }
 
 article section img {
-    aspect-ratio: 1 / 1.25;
+    aspect-ratio: 0.75;
 
     margin-left: 2rem;
     height: 300px;
