@@ -1,9 +1,10 @@
+
+
 @font-face {
     font-family: Montserrat-Medium;
     src: url("fonts/Montserrat-Medium.otf");
     font-display: swap;
 }
-
 
 html {
     background-color: #1a1d22;
@@ -79,13 +80,10 @@ article section img {
     display: grid;
     place-items: center;
 
+    width: 5em;
+    
     margin: auto;
-    margin-top: 2rem;
-
-    width: 64px;
-    height: 32px;
-
-    padding: 0.4rem;
+    padding: 0.5em;
 
     border: 3px solid;
     border-radius: 15px;
@@ -114,34 +112,30 @@ article section img {
 }
 
 #head {
-    height: 80px;
-
     display: flex;
 
-    background-color: #202329;
-
+    height: 70px;
     position: sticky;
     top: 0;
 
     z-index: 2;
 
+    background-color: #202329;
     box-shadow: 0 10px 3px #181a1d;
 }
 
 #head h1 {
-    height: 40px;
-
-    margin-left: 0.7em;
+    margin: auto 2rem auto 1rem;
 
     text-shadow: 0 2px 2px rgb(139, 139, 139);
     border-bottom: 2px solid;
 }
 
 #head nav {
-    width: 500px;
     height: 100%;
 
     margin-left: auto;
+    margin-right: 2rem;
 }
 
 #head ul {
@@ -150,7 +144,6 @@ article section img {
     justify-content: center;
     gap: 3rem;
 
-    width: 500px;
     height: 100%;
 
     padding: 0;
@@ -160,20 +153,18 @@ article section img {
 #head li {
     display: grid;
     place-items: center;
-
-    margin-top: 32px;
-
-    height: 24px;
     border-bottom: dashed;
+
+    height: 1.25rem;
+
+    margin: auto;
 
     transition: all 0.2s;
     transition-property: transform, text-shadow;
 }
 
 #head a {
-    display: block;
-    
-    height: 32px;
+    height: 1.5rem;
 }
 
 #head li:hover, .active {
@@ -196,55 +187,69 @@ article section img {
     padding-bottom: 2rem;
   
     animation: fade-in 1s linear;
-  }
+}
 
 #dovednosti li {
     background-color: #25282e;
 
-    width: 190px;
-    height: 312px;
-    box-shadow: 0px 0px 15px #16171b;
-    box-sizing: border-box;
-  
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 0.5rem;
     place-items: center;
+    gap: 0.5rem;
+
+    width: 200px;
+    height: 320px;
     
+    box-shadow: 0px 0px 15px #16171b;
     border-radius: 10px;
+
   
     transition: transform 0.2s;
-  }
+}
   
-  #dovednosti li:hover {
+#dovednosti li:hover {
     transform: scale(110%);
-  }
+}
   
-  #dovednosti li > h1 {
+#dovednosti li > h1 {
     font-size: 1.5rem;
     padding: 0;
     margin: 0;
     text-transform: none;
   
     border-bottom: 3px dashed rgb(255, 255, 255);
-  }
+}
   
-  #dovednosti li > p {
+#dovednosti li > p {
     text-align: center;
-    line-height: 1.45rem;
+    line-height: 1.5em;
     font-size: 0.89rem;
-  
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 3px;
+
     margin: 0;
     margin-top: 0.25rem;
-  }
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
   
-  #dovednosti li > img {
-    aspect-ratio: 1;
+#dovednosti li > img {
     width: 64px;
+    height: 64px;
+
+    aspect-ratio: 1;
+
     margin: 0;
     margin-top: 1.5rem;
-  }
+}
+
+@media (max-width: 513px) {
+    #head ul {
+        gap: 1.5rem;
+    }
+    
+    #dovednosti li {
+        width: 180px;
+        height: 320px;
+    }
+}
