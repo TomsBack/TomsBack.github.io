@@ -3,51 +3,55 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="preload" href="style.css" as="style">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A web about myself, describing my skills, hobbies and other important info!">
+        <meta name="author" content="El Tomlino">
 
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="">
-
-        <meta name="description" content="My personal portfolio">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
         <title>Me</title>
     </head>
 
     <body>
-        <header id="head">
-            <h1>Me</h1>
+        <header class="header">
+            <h1 class="logo">Me</h1>
 
-            <nav>
+            <nav class="nav">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="mailto:oplpet95@gmail.com">Contact</a></li>
+                    <li><a href="index.html" class="nav-active">Home</a></li>
+                    <li><a href="skills.html" class="nav-button">Skills</a></li>
+                    <li><a href="projects.html" class="nav-button">Projects</a></li>
+                    <li><a href="mailto:oplpet95@gmail.com" class="nav-button">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <article>
+        <div class="mode-switch">
+            <img src="images/sun.png" alt="Photo of a sun">
+        </div>
+
+        <article class="main-body">
             <header>
-                <h1>About Me</h1>
+                <h2 class="title">About Me</h2>
             </header>
-
+            
             <section>
-                <div>
-                    <p>I'm a 19 years old bimbo from Czechia.</p>
-                    <p>I've been programming for 4 years already and now I'm learning <strong>HTML/CSS</strong>.</p>
-                    <p>I love to cook and discover new kinds of food.</p>
-                    <p><a class="button" href="skills.html">Skills</a></p>
-                </div>
-
-                <img src="images/me.avif" alt="Photo of ME">
+                <p>I'm a 19 years old bimbo from Czechia.<br>I've been programming for 4 years already and currently I'm learning <strong>web development</strong>.<br>I love to cook and discover new kinds of food.</p>
+                <img src="images/me.avif" alt="Photo of me">
+                
             </section>
-
+            
+            <nav class="nav socials">
+                <ul>
+                    <li><a href="index.html" class="social-button"><img src="images/discord.avif" alt="Photo of Discord"></a></li>
+                    <li><a href="https://www.linkedin.com/in/jojo-tom-38a893269/" class="social-button"><img src="images/linkedin.avif" alt="Photo of LinkedIn"></a></li>
+                    <li><a href="https://github.com/TomsBack" class="social-button"><img src="images/github.avif" alt="Photo of Github"></a></li>
+                </ul>
+            </nav>
         </article>
 
-        <footer>
-            <p>Made by Tom</p>
+        <footer class="footer">
+            <p>&copy;Made by <em>Tom</em></p>
         </footer>
     </body>
 </html>
