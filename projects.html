@@ -4,69 +4,72 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A web about myself, describing my skills, hobbies and other important info!">
+        <meta name="author" content="El Tomlino">
+
         <link rel="stylesheet" href="style.css">
-
-        <meta name="description" content="List of my projects">
-
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
         <title>Me</title>
     </head>
 
     <body>
-        <header id="head">
-            <h1>Me</h1>
+        <header class="header">
+            <h1 class="logo">Me</h1>
 
-            <nav>
+            <nav class="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li class="active"><a href="projects.html">Projects</a></li>
-                    <li><a href="mailto:oplpet95@gmail.com">Contact</a></li>
+                    <li><a href="index.html" class="nav-button">Home</a></li>
+                    <li><a href="skills.html" class="nav-button">Skills</a></li>
+                    <li><a href="projects.html" class="nav-active">Projects</a></li>
+                    <li><a href="mailto:oplpet95@gmail.com" class="nav-button">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <article>
+        <div class="mode-switch">
+            <img src="images/sun.png" alt="Photo of a sun">
+        </div>
+
+        <article class="main-body">
             <header>
-                <h1>Projects</h1>
+                <h2 class="title">My Projects</h2>
             </header>
 
-            <section class="center">
-                <ul class="project-types">
-                    <li>
-                        <img src="images/skills/html.avif" alt="">
-
-                        <section class="project">
-                            <img src="/images/skills/css.avif" alt="">
-
-                            <p>dfakljdla</p>
-                        </section>
-
-                        <section class="project">
-                            <img src="/images/skills/css.avif" alt="">
-
-                            <p>dfakljdla</p>
+            <section class="projects">
+                <ul>
+                    <li class="projects-card appear">
+                        <img src="images/uchiha-powers.avif" width="512" alt=" Photo of my project">
+                        <section>
+                            <h2 class="animated-link"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2679585043">Uchiha Powers</a></h2>
+                            <h3>Developed using: <span>GLua, Blender, Source SDK 13</span></h3>
+                            <p>A <strong>Naruto</strong> inspired modification for the game <strong>Garry's Mod</strong>. The mod was based around <strong>Sharingan abilities</strong>, where you could use almost all abilities known to the fandom. 
+                                The mod was not updated for a long time, but I decided to <strong>resume development</strong> and a <strong>huge</strong> udpate is being prepared that reworks the entire addon from the roots and adds skill trees 
+                                and fully working <strong>Susano'o stages</strong>.
+                            </p>
+                            <h3 class="project-social"><a href="https://discord.com/invite/YNYrqVzsxS">Discord</a></h3>
                         </section>
                     </li>
-
-                    <li>
-                        <img src="images/skills/html.avif" alt="">
-
-                        <section class="project">
-                            <img src="/images/skills/css.avif" alt="">
-                            
-                            <article>
-                                <h2>fdsafdasfa</h2>
-                                <p>gdgdasfdsfa</p>
-                            </article>
+                    <li class="projects-card appear">
+                        <img src="images/bizarre-abilities.avif" width="512" alt=" Photo of my project">
+                        <section>
+                            <h2 class="animated-link"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2701274666">Bizarre Abilities</a></h2>
+                            <h3>Developed using: <span>GLua, Blender, Source SDK 13</span></h3>
+                            <p>
+                                Initially developed alone by my fellow coder friend <strong><a href="https://steamcommunity.com/id/adinfinitum5" class="animated-link">Jopster1336</a></strong>,
+                                but at the start of 2023, I officially joined the development team and we decided to work on <strong>Bizarre Abilities 1.4</strong> which overhauled the code base
+                                and we made many <strong>custom systems</strong> which helped us tremendously with the development. We also abandoned the <strong>Valve biped skeleton</strong>
+                                and decided to make our own skeleton model, which we would rig and animate for.
+                                
+                            </p>
+                            <h3 class="project-social"><a href="discord.com/invite/GpvuVRpXf6">Discord</a></h3>
                         </section>
                     </li>
                 </ul>
             </section>
-
         </article>
 
-        <footer>
-            <p>Made by Tom</p>
+        <footer class="footer">
+            <p>&copy;Made by <em>Tom</em></p>
         </footer>
     </body>
 </html>
