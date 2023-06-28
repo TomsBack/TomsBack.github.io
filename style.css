@@ -17,7 +17,7 @@
 @font-face {
     font-family: Montserrat-Medium;
     src: url("fonts/Montserrat-Medium.woff2");
-    font-display: optional;
+    font-display: swap;
 }
 
 @keyframes appear {
@@ -412,4 +412,72 @@ a {
 .project-social a:hover {
     color: #404ab6;
     background-color: white;
+}
+
+@media (max-width: 500px) {
+    .nav > ul {
+        gap: 1rem;
+    }
+
+    .main-body section {
+        flex-direction: column;
+    }
+
+    .projects-card > img {
+        max-width: 300px;
+    
+        border-radius: 10px;
+        filter: brightness(70%);
+    
+        box-shadow: 0 0 15px #416bb313;
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 0.84rem;
+    }
+
+    .nav > ul {
+        gap: 0.75rem;
+    }
+
+    .main-body section {
+        flex-direction: column;
+    }
+
+    .skills {
+        gap: 2rem;
+    }
+
+    .skills-card {
+        width: 170px;
+        height: 250px;
+    }
+    
+    .skills-card > p {
+        max-width: 50ch;
+    
+        padding-top: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+    
+        line-height: 1.6em;
+    }
+    
+    .skills-card > img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .projects-card > img {
+        max-width: 300px;
+    
+        border-radius: 10px;
+        filter: brightness(70%);
+    
+        box-shadow: 0 0 15px #416bb313;
+        transition: all 0.2s ease-in-out;
+    }
 }
