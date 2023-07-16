@@ -83,7 +83,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    font-family: Montserrat-Medium;
+    font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
     color: var(--font-color);
     background-color: var(--main-bg-color);
 }
@@ -202,30 +202,28 @@ a {
 
 .main-body section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    gap: 2rem;
-}
+    padding: 2rem 0 2rem 0;
 
-.main-body section > img {
-    max-width: 225px;
-    
-    aspect-ratio: 0.75;
-    
-    filter: grayscale(1);
-    border-radius: 10px;
-    
-    animation: appear-from-right 1s ease-in-out;
+    gap: 1rem;
 }
 
 .main-body > section > p {
-    animation: appear-from-left 1s ease-in-out;
+    text-align: center;
+    animation: appear 1s ease-in-out;
 }
 
 .main-body p {
     max-width: 50ch;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
+}
+
+.about-me a {
+    color: #52688f;
+    text-decoration: underline solid
 }
 
 .socials {
@@ -348,6 +346,7 @@ a {
 .projects-card {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 3rem;
 
     padding-left: 2rem;
@@ -376,12 +375,12 @@ a {
 }
 
 .projects-card > img {
-    width: 512px;
+    max-width: 512px;
+    aspect-ratio: 1.35;
 
     border-radius: 10px;
     filter: brightness(70%);
-
-    box-shadow: 0 0 15px #416bb313;
+    
     transition: all 0.2s ease-in-out;
 }
 
@@ -399,6 +398,10 @@ a {
     transform: scale(110%);
     color: #416ab3;
     border-bottom: 3px solid #416ab3;
+}
+
+.project-social {
+    padding-top: 1rem;
 }
 
 .project-social a {
@@ -424,7 +427,9 @@ a {
     }
 
     .projects-card > img {
-        max-width: 300px;
+        max-width: 360px;
+        aspect-ratio: 1.35;
+        object-fit: contain;
     
         border-radius: 10px;
         filter: brightness(70%);
@@ -473,6 +478,8 @@ a {
 
     .projects-card > img {
         max-width: 300px;
+        aspect-ratio: 1.35;
+        object-fit: contain;
     
         border-radius: 10px;
         filter: brightness(70%);
