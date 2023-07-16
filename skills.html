@@ -7,6 +7,7 @@
         <meta name="description" content="A web about myself, describing my skills, hobbies and other important info!">
         <meta name="author" content="El Tomlino">
 
+        <link rel="preload" as="font" href="fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title>Me</title>
@@ -14,12 +15,12 @@
 
     <body>
         <header class="header">
-            <h1 class="logo">Me</h1>
+            <h1 class="logo"><a href="index.html">Me</a></h1>
 
             <nav class="nav">
                 <ul>
                     <li><a href="index.html" class="nav-button">Home</a></li>
-                    <li><a href="skills.html" class="nav-active">Skills</a></li>
+                    <li class="nav-active"><a href="skills.html">Skills</a></li>
                     <li><a href="projects.html" class="nav-button">Projects</a></li>
                     <li><a href="mailto:oplpet95@gmail.com" class="nav-button">Contact</a></li>
                 </ul>
@@ -39,49 +40,53 @@
                 <li class="skills-card appear-top">
                     <img src="images/skills/html.avif" alt="HTML Logo">
                     <h2>HTML</h2>
-                    <p>HTML se učím z <strong>itnetworku</strong>. Díky nim, umím udělat stránky jako je tato.</p>
+                    <p>I Learned <strong>HTML</strong> from <strong><a class="hover-link" href="https://www.itnetwork.cz/">ITNetwork</a></strong>, thanks to them I can make sites like this one.</p>
                 </li>
 
                 <li class="skills-card appear-top">
                     <img src="images/skills/css.avif" alt="CSS Logo">
                     <h2>CSS</h2>
-                    <p>CSS se učím z <strong>itnetworku</strong>. Díky nim, umím udělat stránky jako je tato.</p>
+                    <p>I Learned <strong>CSS</strong> from <strong><a class="hover-link" href="https://www.itnetwork.cz/">ITNetwork</a></strong>, thanks to them I can 
+                        <span class="good-style">styleee</span> and <span class="good-center">center</span>.
+                    </p>
                 </li>
 
                 <li class="skills-card appear-top">
                     <img src="images/skills/js.avif" alt="JS Logo">
                     <h2>JavaScript</h2>
-                    <p>JS se učím z <strong>itnetworku</strong>. Díky nim, umím udělat stránky jako je tato.</p>
+                    <p>I'm still learning <strong>JS</strong> :D</p>
                 </li>
 
                 <li class="skills-card appear-top">
                     <img src="images/skills/c.avif" alt="C Logo">
                     <h2>C</h2>
-                    <p>C Jsem se učil na <strong>IT Průmyslové škole</strong>. Byl to poněkuď těžký startovní jazyk ve škole.</p>
+                    <p>I was taught <strong>C</strong> in my first year in school, I haven't used it as much after, only sometimes for <strong>Garry's Mod</strong>.</p>
                 </li>
 
                 <li class="skills-card appear-bottom">
                     <img src="images/skills/c-sharp.avif" alt="C# Logo">
                     <h2>C#</h2>
-                    <p>C# jsem se učil, když jsem chtěl dělat hry v <strong>Unity</strong>, ale tentokrát se ho učím kvůli webům.</p>
+                    <p>I briefly learned <strong>C#</strong>, when i was making games in <strong>Unity</strong>, but now I've put much more time into learning it fully.</p>
                 </li>
 
                 <li class="skills-card appear-bottom">
                     <img src="images/skills/python.avif" alt="Python Logo">
                     <h2>Python</h2>
-                    <p>Python je super jazyk, všestranný, ale né moc rychlý. Používal jsem ho k vývoji <strong>Discord bota</strong>.</p>
+                    <p>I used <strong>Python</strong> mainly for personal projects, but I've also used it to make <strong>Discord</strong> bots.</p>
                 </li>
 
                 <li class="skills-card appear-bottom">
                     <img src="images/skills/sql.avif" alt="SQL Logo">
                     <h2>SQL</h2>
-                    <p>SQL jsem využíval, když jsem dělal různe projekty, ať už do her a nebo pro aplikace. Nyní se ho učím u <strong>itnetworku</strong>.</p>
+                    <p>Always use it. Mainly for <strong>Garry's Mod</strong> or when i coded <strong>Discord</strong> bots.</p>
                 </li>
 
                 <li class="skills-card appear-bottom">
                     <img src="images/skills/lua.avif" alt="Lua Logo">
                     <h2>Lua</h2>
-                    <p>Lua jazyk používám nejdéle. Mám v něm hodně zkušeností a projektů, které se nacházejí na <br/><strong>Steam Workshopu</strong>. <a href="projects.html">Projekty</a></p>
+                    <p>My favourite boy. I'm using <strong>Lua</strong> for the longest time and I have projects on 
+                        <strong><a class="hover-link" href="https://steamcommunity.com/profiles/76561198078097727/myworkshopfiles/">Steam Workshop</a></strong> and also helped several mods. <a class="hover-link" href="projects.html">Projects</a>
+                    </p>
                 </li>
             </ul>
         </article>

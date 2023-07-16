@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/*Why does Firefox make me do this aaaaaa*/
+p, a, img, h1, h2, h3, div, section, li, ul {
+    transform: rotate(0.02deg);
+}
+
 :root {
     --main-bg-color: #1a1d22;
     --header-bg-color: #202329;
@@ -16,7 +21,7 @@
 
 @font-face {
     font-family: Montserrat-Medium;
-    src: url("fonts/Montserrat-Medium.woff2");
+    src: url("fonts/Montserrat-Medium.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -151,10 +156,24 @@ a {
 }
 
 .logo {
+    transition: all 0.3s;
+}
+
+.logo a {
     padding-right: 2rem;
     padding-left: 1rem;
 
-    text-shadow: 0 3px 1px rgb(145, 145, 145);
+    text-shadow: 0 2px 1px rgb(145, 145, 145);
+
+    transition: all 0.3s;
+}
+
+.logo a:hover {
+    text-shadow: 0 2px 10px rgb(192, 192, 192);
+}
+
+.logo:hover {
+    translate: 0 -3px;
 }
 
 .nav {
@@ -174,17 +193,17 @@ a {
     transition: all 0.2s;
 }
 
-.nav li:hover, .nav-active {
-    transform: scale(110%);
-    text-shadow: 0 0 7px var(--text-glow-strong);
-    filter: drop-shadow(0 0 10px var(--text-glow));
+.nav li a {
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-
-.nav a {
-    padding: 0.1rem;
-
-    border-bottom: 3px dashed;
+.nav li:hover, .nav-active {
+    translate: 0 -3px;
+    scale: 110%;
+    text-shadow: 0 0 10px var(--text-glow-strong);
+    filter: drop-shadow(0 0 10px var(--text-glow));
 }
 
 .main-body {
@@ -305,7 +324,7 @@ a {
 }
 
 .skills-card > h2 {
-    border-bottom: 3px dashed;
+    border-bottom: 3px solid;
 }
 
 .skills-card > p {
@@ -417,6 +436,23 @@ a {
     background-color: white;
 }
 
+.mode-switch img {
+    cursor: pointer;
+}
+
+.good-style {
+    background-color: red;
+}
+
+.good-center {
+    position: absolute;
+}
+
+.hover-link:hover {
+    color: #404ab6;
+    translate: 0 -3px;
+}
+
 @media (max-width: 500px) {
     .nav > ul {
         gap: 1rem;
@@ -424,6 +460,12 @@ a {
 
     .main-body section {
         flex-direction: column;
+    }
+
+    .socials ul {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
     }
 
     .projects-card > img {
@@ -456,6 +498,12 @@ a {
         gap: 2rem;
     }
 
+    .socials ul {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+
     .skills-card {
         width: 170px;
         height: 250px;
@@ -486,5 +534,29 @@ a {
     
         box-shadow: 0 0 15px #416bb313;
         transition: all 0.2s ease-in-out;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --main-bg-color: #e6e6e6;
+        --header-bg-color: #dbdbdb;
+        --element-bg-color: #e0e0e0;
+        --font-color: rgb(0, 0, 0);
+        --text-glow: rgb(54, 54, 54);
+        --text-glow-strong: rgb(36, 36, 36);
+        --footer-text-color: #464f5f;
+    }
+
+    .mode-switch img {
+        filter: invert(0);
+    }
+
+    .socials img {
+        filter: invert(0);
+    }
+
+    .header {
+        box-shadow: 0 10px 10px rgb(126, 126, 126);
     }
 }
