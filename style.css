@@ -7,8 +7,11 @@
 /*I should switch to sass and change the structure*/
 
 /*Why does Firefox make me do this aaaaaa*/
-p, a, img, h1, h2, h3, div, section, li, ul {
-    transform: rotate(0.02deg);
+
+@-moz-document url-prefix() {
+    p, a, img, h1, h2, h3, div, section, li, ul {
+        transform: rotate(0.02deg);
+    }
 }
 
 :root {
