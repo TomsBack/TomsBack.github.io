@@ -7,7 +7,6 @@
 /*I should switch to sass and change the structure*/
 
 /*Why does Firefox make me do this aaaaaa*/
-
 @-moz-document url-prefix() {
     p, a, img, h1, h2, h3, div, section, li, ul {
         transform: rotate(0.02deg);
@@ -22,6 +21,7 @@
     --text-glow: rgb(141, 141, 141);
     --text-glow-strong: rgb(201, 201, 201);
     --footer-text-color: #7b88a0;
+    --invert-amount: 1;
 }
 
 @font-face {
@@ -86,6 +86,10 @@
         filter: opacity(100%);
         transform: translateY(0);
     }
+}
+
+html * {
+    transition: color, background-color 0.25s;
 }
 
 body {
@@ -157,7 +161,12 @@ a {
 
     width: 32px;
 
-    filter: invert(1);
+    filter: invert(var(--invert-amount));
+    transition: all 0.25s;
+}
+
+.mode-switch img:hover {
+    scale: 115%;
 }
 
 .logo {
@@ -267,7 +276,7 @@ a {
     width: 64px;
     aspect-ratio: 1;
 
-    filter: invert(1);
+    filter: invert(var(--invert-amount));
 }
 
 .socials li {
@@ -426,19 +435,18 @@ a {
 
 .project-social {
     padding-top: 1rem;
-}
-
-.project-social a {
     padding: 1rem;
     background-color: #404ab6;
     border-radius: 15px;
+    font-weight: bold;
 
     transition: all 0.2s ease-in-out;
 }
 
-.project-social a:hover {
+.project-social:hover {
     color: #404ab6;
     background-color: white;
+    transform: scale(110%);
 }
 
 .mode-switch img {
@@ -541,7 +549,7 @@ a {
         transition: all 0.2s ease-in-out;
     }
 }
-
+/* 
 @media (prefers-color-scheme: light) {
     :root {
         --main-bg-color: #e6e6e6;
@@ -551,10 +559,11 @@ a {
         --text-glow: rgb(54, 54, 54);
         --text-glow-strong: rgb(36, 36, 36);
         --footer-text-color: #464f5f;
+        --invertAmount: 0;
     }
 
     .mode-switch img {
-        filter: invert(0);
+        filter: invert(var(--invertAmount));
     }
 
     .socials img {
@@ -564,4 +573,4 @@ a {
     .header {
         box-shadow: 0 10px 10px rgb(126, 126, 126);
     }
-}
+} */
