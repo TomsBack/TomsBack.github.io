@@ -162,11 +162,13 @@ a {
     width: 32px;
 
     filter: invert(var(--invert-amount));
+
     transition: all 0.25s;
 }
 
 .mode-switch img:hover {
     scale: 115%;
+    filter: drop-shadow(0 0 10px var(--text-glow)) invert(var(--invert-amount));
 }
 
 .logo {
@@ -333,7 +335,7 @@ a {
 }
 
 .skills-card:hover {
-    transform: scale(110%);
+    scale: 110%;
     filter: brightness(110%);
 }
 
