@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/*I should switch to sass and change the structure*/
+/*TODO:I should switch to sass and change the structure*/
 
 /*Why does Firefox make me do this aaaaaa*/
 @-moz-document url-prefix() {
