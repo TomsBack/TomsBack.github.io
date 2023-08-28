@@ -11,6 +11,7 @@ The first 'real' website that I tried to make when I was first learning HTML and
 ## TODO:
 
 + Implement JavaScript ✓
++ Improve light mode ✕
 + Refactor with Sass ✕
 + More customizable CSS ✕
 + Themes ✕
