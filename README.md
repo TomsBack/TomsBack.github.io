@@ -12,7 +12,7 @@ The first 'real' website that I tried to make when I was first learning HTML and
 
 + Implement JavaScript ✓
 + Refactor with Sass ✕
-+ More customizable css
++ More customizable CSS ✕
 + Themes ✕
 + Languages ✕
 + Redo "Contact" page ✕
