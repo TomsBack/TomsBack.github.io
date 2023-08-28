@@ -4,16 +4,16 @@ The first 'real' website that I tried to make when I was first learning HTML and
 
 ## Developed Using:
 
-+ **JavaScript**
-+ **HTML**
-+ **CSS**
+- **JavaScript**
+- **HTML**
+- **CSS**
 
 ## TODO:
 
-+ Implement JavaScript ✓
-+ Improve light mode ✕
-+ Refactor with Sass ✕
-+ More customizable CSS ✕
-+ Themes ✕
-+ Languages ✕
-+ Redo "Contact" page ✕
+- [x] Implement JavaScript
+- [ ] Improve light mode
+- [ ] Refactor with Sass
+- [ ] More customizable CSS
+- [ ] Themes
+- [ ] Languages
+- [ ] Redo "Contact" page
