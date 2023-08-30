@@ -6,10 +6,10 @@ if (!localStorage.getItem("darkMode")) {
 
 applyTheme();
 
-window.addEventListener("load", () => {
+window.addEventListener("load", (event) => {
     let switchButton = document.querySelector(".mode-switch").firstElementChild;
 
-    switchButton.addEventListener("click", () => {
+    switchButton.addEventListener("click", (event) => {
         let darkMode = localStorage.getItem("darkMode") === 'true';
         
         if (darkMode) {
