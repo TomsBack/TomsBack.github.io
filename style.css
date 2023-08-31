@@ -530,7 +530,7 @@ a {
 }
 
 .dropdown:focus-within .dropdown-expander {
-    scale: 125%;
+    scale: 127%;
 }
 
 .dropdown-content a {
