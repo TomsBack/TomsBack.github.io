@@ -128,7 +128,7 @@ meter {
 }
 
 html {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Gabarito", cursive;
   color: var(--text-color);
   background-color: var(--main-bg-color);
 }
