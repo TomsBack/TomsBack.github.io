@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    > section {
+    .main-body {
         flex: 1;
     }
 }
@@ -48,6 +48,10 @@ a {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.main-logo {
+    font-size: 2rem;
 }
 
 .nav-items {
