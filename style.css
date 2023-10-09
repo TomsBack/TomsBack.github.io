@@ -152,6 +152,14 @@ a {
   transition: all var(--transition-speed) ease-in-out;
 }
 
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: -1;
+}
+
 .navigation {
   height: 50px;
   position: sticky;

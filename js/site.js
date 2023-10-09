@@ -15,6 +15,13 @@ const lightIcon = document.querySelector("#light");
 
 addEventListener("load", e => {
     setTheme();
+
+    //start the particles
+    Particles.init({
+        selector: ".background",
+        color: getComputedStyle(document.body).getPropertyValue("--text-hover-color"),
+        connectParticles: true,
+    });
 });
 
 function setTheme() {
