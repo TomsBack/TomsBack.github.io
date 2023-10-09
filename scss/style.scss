@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    section {
+    > section {
         flex: 1;
     }
 }
@@ -22,7 +22,7 @@ a {
     color: var(--text-color);
     text-decoration: none;
 
-    transition: all 0.1s ease-in-out;
+    transition: all var(--transition-speed) ease-in-out;
 }
 
 .navigation {
@@ -43,6 +43,13 @@ a {
     margin: 0 1rem;
 }
 
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
 .nav-items {
     height: 100%;
 
@@ -55,7 +62,7 @@ a {
 
     li {
         padding: 1rem 0;
-        transition: all 0.1s ease-in-out;
+        transition: all var(--transition-speed) ease-in-out;
     }
 
     li:hover {
@@ -65,6 +72,27 @@ a {
             padding: inherit;
             color: var(--text-hover-color);
         }
+    }
+}
+
+.settings {
+    width: 20px;
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        stroke: var(--text-color);
+        transition: all var(--transition-speed);
+    }
+}
+
+.settings:hover {
+    svg {
+        stroke: var(--text-hover-color);
+
     }
 }
 
