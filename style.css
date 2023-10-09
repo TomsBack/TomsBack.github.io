@@ -158,6 +158,13 @@ a {
   gap: 3rem;
 }
 
+.right-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .main-logo {
   font-size: 2rem;
 }
@@ -196,6 +203,43 @@ a {
 
 .settings:hover svg {
   stroke: var(--text-hover-color);
+  translate: 0 var(--hover-pos);
+}
+
+.theme-switcher {
+  position: relative;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: inherit;
+  border-radius: 50px;
+}
+.theme-switcher svg {
+  pointer-events: none;
+  stroke: var(--text-color);
+  transition: all var(--transition-speed) ease-in-out;
+}
+.theme-switcher .active {
+  filter: invert(1);
+}
+.theme-switcher .light-active {
+  right: -7%;
+}
+
+.button-switcher {
+  position: absolute;
+  right: 55%;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.button-switcher:hover {
+  background-color: var(--text-hover-color);
 }
 
 .footer {
