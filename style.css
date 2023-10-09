@@ -13,6 +13,12 @@
   padding: 0;
 }
 
+/*Why does Firefox make me do this aaaaaa*/
+@-moz-document url-prefix() {
+  * {
+    transform: rotate(0.01deg);
+  }
+}
 /* Preferred box-sizing value */
 *,
 *::before,
