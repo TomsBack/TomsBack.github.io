@@ -1,6 +1,16 @@
 @use "_css-reset";
 @use "_variables";
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: all var(--transition-speed) ease-in-out;
+}
+
 html {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: var(--text-color);
@@ -22,7 +32,7 @@ a {
     color: var(--text-color);
     text-decoration: none;
 
-    transition: all var(--transition-speed) ease-in-out;
+    @include transition();
 }
 
 .navigation {
@@ -44,9 +54,7 @@ a {
 }
 
 .left-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     gap: 3rem;
 }
 
@@ -57,20 +65,18 @@ a {
 .nav-items {
     height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     gap: 1.5rem;
 
     font-weight: bold;
 
     li {
         padding: 1rem 0;
-        transition: all var(--transition-speed) ease-in-out;
+        @include transition();
     }
 
     li:hover {
-        translate: 0 -5px;
+        translate: 0 var(--hover-pos);
 
         a {
             padding: inherit;
@@ -83,20 +89,17 @@ a {
     width: 20px;
     aspect-ratio: 1;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
 
     svg {
         stroke: var(--text-color);
-        transition: all var(--transition-speed);
+        @include transition();
     }
 }
 
 .settings:hover {
     svg {
         stroke: var(--text-hover-color);
-
     }
 }
 
@@ -104,7 +107,5 @@ a {
     width: 100%;
     min-height: 50px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
 }

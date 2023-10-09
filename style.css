@@ -112,7 +112,8 @@ meter {
   --text-muted-color: rgb(100, 100, 100);
   --text-hover-color: rgb(95, 56, 168);
   --invert-amount: 1;
-  --transition-speed: 0.1s ;
+  --transition-speed: 0.1s;
+  --hover-pos: -5px;
 }
 
 html {
@@ -174,7 +175,7 @@ a {
   transition: all var(--transition-speed) ease-in-out;
 }
 .nav-items li:hover {
-  translate: 0 -5px;
+  translate: 0 var(--hover-pos);
 }
 .nav-items li:hover a {
   padding: inherit;
@@ -190,7 +191,7 @@ a {
 }
 .settings svg {
   stroke: var(--text-color);
-  transition: all var(--transition-speed);
+  transition: all var(--transition-speed) ease-in-out;
 }
 
 .settings:hover svg {
