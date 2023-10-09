@@ -12,6 +12,15 @@ const buttonSwitcher = document.querySelector(".button-switcher");
 const darkIcon = document.querySelector("#dark");
 const lightIcon = document.querySelector("#light");
 
+const colorPicker = new CodeMirrorColorPicker.ColorPicker({
+    position: "inline",
+    container: document.querySelector("#picker"),
+    color: 'blue', // init color code 
+    type : 'palette' // or 'sketch',  default type is 'chromedevtool'
+})
+
+console.log(colorPicker);
+
 setTheme();
 
 function setTheme() {
