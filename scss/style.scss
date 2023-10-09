@@ -17,6 +17,10 @@ html {
     background-color: var(--main-bg-color);
 }
 
+* {
+    @include transition();
+}
+
 body {
     min-height: 100vh;
 
@@ -145,6 +149,7 @@ a {
     border: none;
     border-radius: 50px;
 
+    background-color: var(--text-color);
     transition: all 0.25s;
 
     cursor: pointer;

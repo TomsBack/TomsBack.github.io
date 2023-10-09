@@ -105,7 +105,7 @@ meter {
   all: revert;
 }
 
-:root {
+.dark {
   --main-bg-color: rgb(30, 30, 30);
   --secondary-bg-color: rgb(26, 26, 26);
   --text-color: rgb(204, 204, 204);
@@ -116,10 +116,25 @@ meter {
   --hover-pos: -5px;
 }
 
+.light {
+  --main-bg-color: rgb(228, 228, 228);
+  --secondary-bg-color: rgb(216, 216, 216);
+  --text-color: rgb(36, 36, 36);
+  --text-muted-color: rgb(92, 92, 92);
+  --text-hover-color: rgb(95, 56, 168);
+  --invert-amount: 1;
+  --transition-speed: 0.1s;
+  --hover-pos: -5px;
+}
+
 html {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: var(--text-color);
   background-color: var(--main-bg-color);
+}
+
+* {
+  transition: all var(--transition-speed) ease-in-out;
 }
 
 body {
@@ -235,6 +250,7 @@ a {
   height: 28px;
   border: none;
   border-radius: 50px;
+  background-color: var(--text-color);
   transition: all 0.25s;
   cursor: pointer;
 }

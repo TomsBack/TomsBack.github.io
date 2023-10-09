@@ -1,10 +1,10 @@
 'use strict';
 let darkMode = localStorage.getItem("darkMode");
 
-if (darkMode == null && window.matchMedia) {
+if (darkMode === null && window.matchMedia) {
     darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 }
-darkMode = Boolean(darkMode);
+darkMode = darkMode === "true";
 
 const themeSwitcher = document.querySelector(".theme-switcher");
 const buttonSwitcher = document.querySelector(".button-switcher");
@@ -12,24 +12,24 @@ const buttonSwitcher = document.querySelector(".button-switcher");
 const darkIcon = document.querySelector("#dark");
 const lightIcon = document.querySelector("#light");
 
-const colorPicker = new CodeMirrorColorPicker.ColorPicker({
-    position: "inline",
-    container: document.querySelector("#picker"),
-    color: 'blue', // init color code 
-    type : 'palette' // or 'sketch',  default type is 'chromedevtool'
-})
 
-console.log(colorPicker);
-
-setTheme();
+addEventListener("load", e => {
+    setTheme();
+});
 
 function setTheme() {
     if (darkMode) {
+        document.documentElement.classList.remove("light");
+        document.documentElement.classList.add("dark");
+
         buttonSwitcher.classList.remove("light-active");
         
         darkIcon.classList.add("active");
         lightIcon.classList.remove("active");
     } else {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.classList.add("light");
+
         buttonSwitcher.classList.add("light-active");
 
         darkIcon.classList.remove("active");
