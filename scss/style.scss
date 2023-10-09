@@ -1,0 +1,78 @@
+@use "_css-reset";
+@use "_variables";
+
+html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    section {
+        flex: 1;
+    }
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.navigation {
+    height: 50px;
+
+    position: sticky;
+
+    background-color: var(--secondary-bg-color);
+}
+
+.nav {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 1rem;
+}
+
+.nav-items {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    font-weight: bold;
+
+    li {
+        padding: 1rem 0;
+        transition: all 0.1s ease-in-out;
+    }
+
+    li:hover {
+        translate: 0 -5px;
+
+        a {
+            padding: inherit;
+            color: var(--text-hover-color);
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
