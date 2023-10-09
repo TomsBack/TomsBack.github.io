@@ -1,5 +1,10 @@
 'use strict';
-let darkMode = Boolean(localStorage.getItem("darkMode"));
+let darkMode = localStorage.getItem("darkMode");
+
+if (darkMode == null && window.matchMedia) {
+    darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+darkMode = Boolean(darkMode);
 
 const themeSwitcher = document.querySelector(".theme-switcher");
 const buttonSwitcher = document.querySelector(".button-switcher");
@@ -21,13 +26,17 @@ function setTheme() {
         darkIcon.classList.remove("active");
         lightIcon.classList.add("active");
     }
+
+    localStorage.setItem("darkMode", darkMode);
 }
+
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", event => {
+    darkMode = event.matches;
+    setTheme();
+});
 
 buttonSwitcher.addEventListener("click", event => {
     darkMode = !darkMode;
 
     setTheme();
-    console.log(darkMode);
-
-    localStorage.setItem("darkMode", darkMode);
-})
+});
