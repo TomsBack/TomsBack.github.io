@@ -4,73 +4,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A web about myself, describing my skills, hobbies and other important info!">
+        <meta name="description" content="">
         <meta name="author" content="El Tomlino">
-
-        <link rel="preload" as="font" href="fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+        <script type="module" src="js/site.js"></script>
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <script src="js/mode-changer.js" defer></script>
         <title>Me</title>
     </head>
 
     <body>
-        <header class="header">
-            <h1 class="logo"><a href="index.html">Me</a></h1>
-
+        <header id="nav-container">
             <nav class="nav">
-                <ul>
-                    <li class="nav-active"><a href="index.html">Home</a></li>
-                    <li><a href="skills.html" class="nav-button">Skills</a></li>
-                    <li><a href="projects.html" class="nav-button">Projects</a></li>
-                    <li><a href="mailto:oplpet95@gmail.com" class="nav-button">Contact</a></li>
+                <section class="main-logo" id="logo"></section>
 
-                    <div class="nav-dropdown dropdown">
-                        <button class="dropdown-expander">
-                            <img src="images/menu.svg" alt="">
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="index.html">Home</a>
-                            <a href="skills.html">Skills</a>
-                            <a href="projects.html">Projects</a>
-                            <a href="mailto:oplpet95@gmail.com">Contact</a>
-                        </div>
-                    </div>
+                <ul class="nav-items">
+
                 </ul>
             </nav>
         </header>
 
-        <div class="mode-switch">
-            <img src="images/sun.svg" alt="Photo of a sun">
-        </div>
+        <section>
 
-        <article class="main-body">
-            <header>
-                <h2 class="title">About Me</h2>
-            </header>
+        </section>
 
-            <section class="about-me">
-                <p>
-                    Hi there! I'm a 19-year-old developer from <strong>Czechia</strong>.<br>
-                    I've been coding for three years and currently spend most of my time working with <strong>GLua</strong>.<br>
-                    Recently, I've also started learning <strong>web development</strong> through an online learning platform called <strong><a class="hover-link" href="https://www.itnetwork.cz/">ITNetwork</a></strong>.<br>
-                    Specifically, I'm focusing on <strong>ASP.NET Core technology</strong>, which I'm excited to explore further.<br>
-                    If you're interested, don't forget to check me out on social media.<br>
-                    Thanks for stopping by!<br>
-                </p>
-            </section>
-            
-            <nav class="nav socials">
-                <ul>
-                    <li><a href="https://discordid.netlify.app/?id=271324181159739404" class="social-button"><img src="images/discord.svg" alt="Photo of Discord"></a></li>
-                    <li><a href="https://www.linkedin.com/in/tomas-oplistil-38a893269/" class="social-button"><img src="images/linkedin.svg" alt="Photo of LinkedIn"></a></li>
-                    <li><a href="https://github.com/TomsBack" class="social-button"><img src="images/github.svg" alt="Photo of Github"></a></li>
-                </ul>
-            </nav>
-        </article>
+        <footer>
 
-        <footer class="footer">
-            <p>&copy;Made by <em>Tom</em></p>
         </footer>
     </body>
 </html>
