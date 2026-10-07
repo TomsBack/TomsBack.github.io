@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Subscription Tracker — Help</title>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+        max-width: 44rem;
+        background: #f7f6f0;
+        color: #202923;
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 0.25em; }
+      h2 { font-size: 1.15rem; margin: 2.25em 0 0.5em; }
+      .lede { font-size: 1.1rem; color: #4a534d; margin-top: 0; }
+      hr { border: 0; border-top: 1px solid #e6e3da; margin: 2.5em 0; }
+      a { color: #245844; }
+      ul { padding-left: 1.2em; }
+      .note {
+        background: #dce5d9;
+        border-radius: 14px;
+        padding: 16px 20px;
+        margin: 2em 0;
+        color: #3c463f;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <p class="lede">Everything the app does, and the two things it deliberately does not.</p>
+
+    <hr />
+
+    <h2>Adding a subscription</h2>
+    <p>
+      Tap the <strong>+</strong> on the Subscriptions screen. Picking a service from the list fills
+      in its category and the page that actually cancels it. If yours is not listed, choose
+      <strong>Add custom subscription</strong> and type the name.
+    </p>
+    <p>
+      <strong>Next payment</strong> is the important field. Every future renewal is worked out from
+      that one date, so set it to a real charge — past or future, either works.
+    </p>
+
+    <h2>Why the monthly figure looks odd</h2>
+    <p>
+      Annual and quarterly plans are spread evenly so the monthly total reflects what actually
+      leaves your account over a year. A weekly subscription counts as 4.35 times a month, not 4 —
+      a month is not four weeks, and rounding it down understates the total by 8.7%.
+    </p>
+    <p>
+      The Calendar screen is different: it shows the real charges landing in that particular month,
+      so an annual plan appears once a year rather than every month.
+    </p>
+
+    <h2>Month-end billing</h2>
+    <p>
+      A subscription billed on the 31st is charged on the 28th in February and back on the 31st in
+      March. It does not creep earlier over time.
+    </p>
+
+    <h2>Pro</h2>
+    <p>
+      The free version tracks up to 5 active subscriptions. Pro is a one-time purchase that unlocks
+      unlimited subscriptions and renewal and trial reminders. Buy it in <strong>Settings → Pro</strong>.
+      There is no subscription.
+    </p>
+    <p>
+      On a new phone, open Settings and tap <strong>Restore purchase</strong>. Use the same Apple ID
+      or Google account you bought Pro with.
+    </p>
+
+    <h2>Reminders</h2>
+    <p>
+      Reminders need Pro. With Pro, turn on <strong>Renewal reminders</strong> in Settings →
+      Reminders and allow notifications when asked. You can set how many days ahead, and at what time of day. Individual subscriptions can
+      override the default.
+    </p>
+    <p>
+      Reminders are scheduled on your device, so they arrive whether or not you have signal.
+      If the screen says notifications are off, that is your phone's system setting rather than the
+      app's — the <strong>Open settings</strong> button takes you there.
+    </p>
+
+    <h2>Archiving vs deleting</h2>
+    <p>
+      <strong>Archiving</strong> stops counting a subscription without losing it, and you can restore
+      it later. <strong>Deleting</strong> removes it and its price history for good.
+    </p>
+    <p>
+      Neither one cancels anything. Only the company can stop charging you, which is why the archive
+      screen offers to open their page first.
+    </p>
+
+    <h2>Currencies</h2>
+    <p>
+      Totals are stated in the currency set in Settings. A subscription billed in a different
+      currency is kept and shown, but left out of the totals and reported at the bottom of the
+      Spending screen. Converting would need live exchange rates, and this app does not download
+      them.
+    </p>
+
+    <h2>Backups</h2>
+    <p>
+      <strong>Export backup</strong> writes a JSON file you can keep anywhere.
+      <strong>Restore backup</strong> reads one back and replaces everything currently in the app.
+      There is no sync: moving to a new phone means exporting from the old one and restoring on the
+      new one. Restoring a backup with more than 5 active subscriptions needs Pro.
+    </p>
+
+    <div class="note">
+      <strong>Not affiliated.</strong> Service names are shown so you can recognize your own
+      subscriptions. Subscription Tracker is not connected to, endorsed by, or sponsored by any of
+      the companies it lets you track, and it cannot start, change or cancel a subscription on your
+      behalf.
+    </div>
+
+    <h2>Still stuck?</h2>
+    <p>Email <a href="mailto:oplpet95@gmail.com">oplpet95@gmail.com</a>.</p>
+  </body>
+</html>
