@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BarDay — Help</title>
+    <style>
+      :root { color-scheme: dark; --bg: #090a08; --text: #f2ecdc; --muted: #8f8879; --line: #383c31; --accent: #b8f21b; }
+      body {
+        margin: 0 auto;
+        padding: 48px 24px 96px;
+        max-width: 44rem;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 0.25em; }
+      h2 { font-size: 1.15rem; margin: 2.25em 0 0.5em; }
+      .lede { font-size: 1.1rem; color: var(--muted); margin-top: 0; }
+      .updated { color: var(--muted); font-size: 0.9rem; }
+      hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
+      a { color: var(--accent); }
+      ul { padding-left: 1.2em; }
+      pre { background: var(--line); border-radius: 12px; padding: 14px 18px; overflow-x: auto; }
+    </style>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <p class="lede">How BarDay sets your goal and tells you if your pace is enough.</p>
+
+    <hr />
+
+    <h2>Setup</h2>
+    <p>
+      Enter your <strong>daily PR</strong> (the most pull-ups you have done in one day), your
+      <strong>attempt window</strong> in hours (1 to 24), and a <strong>long-term ceiling</strong>
+      goal. You can change all three later in Profile.
+    </p>
+
+    <h2>Where the daily goal comes from</h2>
+    <p>
+      When you tap <strong>Start Attempt</strong>, BarDay sets a goal that is a small step above
+      your best day, rounded up to a multiple of 5 and never above your ceiling. The step is
+      smaller as your numbers grow, so recovery keeps up. Profile shows the next generated target.
+    </p>
+
+    <h2>Logging sets</h2>
+    <p>
+      On Today, tap <strong>+1</strong>, <strong>+5</strong> or <strong>+10</strong> to add reps at
+      once. Tap <strong>Add Set</strong> to pick the exact reps, see your rest time, and see what
+      your pace will be after the set.
+    </p>
+
+    <h2>Pace</h2>
+    <pre>current pace  = reps so far / hours elapsed
+required pace = (goal − reps so far) / hours left in your window
+finish        = current pace × your window in hours</pre>
+    <p>
+      The Pace screen compares the two paces and shows the total you are on track to reach. If it
+      is below your goal, it shows how many reps you are short. It also gives a target for the next
+      hour. In the first 15 minutes, current pace is worked out as if 15 minutes had passed.
+    </p>
+
+    <h2>Undoing a set</h2>
+    <p>
+      Tap <strong>Undo</strong> on Today to remove the last set you logged. Tap it again to remove
+      the one before. BarDay does not edit older sets, so undo back to the set you want to change
+      and log it again.
+    </p>
+
+    <h2>Finishing the day</h2>
+    <p>
+      Tap <strong>Finish Day</strong> to end the attempt. The Result screen shows one of four
+      verdicts:
+    </p>
+    <ul>
+      <li><strong>Finished</strong>: you ended below your goal.</li>
+      <li><strong>Goal Met</strong>: you reached 100% of your goal.</li>
+      <li><strong>Goal Buried</strong>: you reached 110% of your goal or more.</li>
+      <li><strong>New Daily PR</strong>: you beat your previous daily PR.</li>
+    </ul>
+
+    <h2>What PR means</h2>
+    <p>
+      PR is your personal record. Your <strong>daily PR</strong> is the most pull-ups you have
+      logged in one day. It rises when a finished day beats it, and the next goal rises with it.
+    </p>
+
+    <h2>History</h2>
+    <p>
+      History shows each day's total, duration, number of sets, best hour, average rest, hourly
+      volume and every set with its time.
+    </p>
+
+    <h2>Starting over</h2>
+    <p>
+      <strong>Reset app</strong> at the bottom of Profile erases your setup and all history, then
+      returns you to setup. This cannot be undone. Changing your daily PR, hours or ceiling in
+      Profile does not delete anything.
+    </p>
+
+    <h2>Your data</h2>
+    <p>
+      Everything is stored on your phone. BarDay has no account, no ads and no purchases, and it
+      does not send your data anywhere. There is no sync, so a new phone starts empty.
+    </p>
+
+    <h2>Still stuck?</h2>
+    <p>Email <a href="mailto:oplpet95@gmail.com">oplpet95@gmail.com</a>.</p>
+  </body>
+</html>
