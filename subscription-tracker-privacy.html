@@ -26,8 +26,8 @@
   </head>
   <body>
     <h1>Privacy Policy</h1>
-    <p class="lede">Subscription Tracker does not collect anything.</p>
-    <p class="updated">Last updated 7 October 2026</p>
+    <p class="lede">Subscription Tracker does not collect your subscriptions.</p>
+    <p class="updated">Last updated 12 November 2026</p>
 
     <hr />
 
@@ -40,8 +40,9 @@
 
     <h2>What leaves your device</h2>
     <p>
-      None of your subscriptions. The app has no server, no account and no analytics. It does not
-      send your data anywhere, so there is nothing for us to see, sell or lose.
+      None of your subscriptions. The app has no server, no account, no analytics and no ads. It
+      does not send your data anywhere, so there is nothing for us to see, sell or lose. On Android
+      the app does not use the advertising ID.
     </p>
     <p>Three things do reach outside the app, and only when you tap them:</p>
     <ul>
@@ -58,6 +59,18 @@
         after that is your choice.
       </li>
     </ul>
+    <p>Two things happen without a tap:</p>
+    <ul>
+      <li>
+        <strong>Update check.</strong> When the app opens, it asks Expo, the service that delivers
+        app updates, whether a newer version exists. The request carries a random ID made for this
+        install, the app version and the platform. It carries none of your subscriptions.
+      </li>
+      <li>
+        <strong>Rating prompt.</strong> After your third added subscription, the app may ask the
+        App Store or Google Play to show its rating prompt. Your rating goes to that store.
+      </li>
+    </ul>
 
     <h2>Reminders</h2>
     <p>
@@ -65,11 +78,19 @@
       not push notifications: no message is sent from anywhere, so no server ever learns what you
       subscribe to or when.
     </p>
+    <p>
+      On Android 13 and later, the app asks for permission to send notifications when you turn on
+      renewal reminders. Reminders use inexact alarms, so the app needs no exact alarm permission.
+    </p>
 
     <h2>Purchases</h2>
     <p>
       The Pro purchase is handled by the App Store or Google Play. When the app opens, it also asks
       the store whether Pro was already bought. The app receives only that confirmation. No payment details reach the app or the developer.
+    </p>
+    <p>
+      On Android, Google Play handles the purchase with the Google account on the phone. Restore
+      purchase asks Google Play which purchases that account owns.
     </p>
 
     <h2>Backups you make yourself</h2>
@@ -78,15 +99,20 @@
       save it to a cloud drive or send it to yourself, it is covered by that service's privacy
       policy rather than this one.
     </p>
+    <p>
+      On Android, export uses the share sheet and restore uses the system file picker. The app has
+      no permission to read your storage. It reads only the file you pick.
+    </p>
 
     <h2>Children</h2>
     <p>
-      The app collects no personal information from anyone, including children under 13.
+      The app collects none of your subscriptions or other personal details from anyone, including
+      children under 13.
     </p>
 
     <h2>Deleting your data</h2>
     <p>
-      Deleting the app removes everything it stored. There is no copy anywhere else to request or
+      Deleting the app removes everything it stored, including its update check ID. There is no copy anywhere else to request or
       erase.
     </p>
 
