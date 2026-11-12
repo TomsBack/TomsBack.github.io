@@ -40,12 +40,13 @@
       ads and no tracking. The developer never receives your photos or any information about you.
       On Android the app does not use the advertising ID.
     </p>
-    <p>Two things happen without a tap:</p>
+    <p>Two things can happen without a tap:</p>
     <ul>
       <li>
-        <strong>Update check.</strong> When the app opens, it asks Expo, the service that delivers
+        <strong>Update check, iPhone only.</strong> When the app opens on iPhone, it asks Expo, the service that delivers
         app updates, whether a newer version exists. The request carries a random ID made for this
-        install, the app version and the platform. It carries none of your photos.
+        install, the app version and the platform. It carries none of your photos. On Android the app
+        makes no update checks and sends nothing.
       </li>
       <li>
         <strong>Rating prompt.</strong> After your second completed save, the app may ask the App
@@ -90,7 +91,7 @@
     <h2>Settings</h2>
     <p>
       Your compression defaults, such as quality, dimensions and format, are saved in the app's own
-      storage on your device. Deleting the app removes them, including its update check ID.
+      storage on your device. Deleting the app removes them, including the update check ID on iPhone.
     </p>
 
     <h2>Sharing</h2>
